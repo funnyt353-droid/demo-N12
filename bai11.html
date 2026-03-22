@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Sắp xếp mảng</title>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<script>
+var SoLuong, i, x;
+var DS = new Array();
+
+// Nhập số lượng
+SoLuong = prompt("Bạn cần nhập bao nhiêu người:", 5);
+
+// Nhập danh sách
+for (i = 0; i < SoLuong; i++) {
+    DS[i] = prompt("Nhập họ tên:", "");
+}
+
+// Sắp xếp alphabet
+DS.sort();
+
+// Hiển thị kết quả
+document.write("<h3>Danh sách đã sắp xếp:</h3>");
+for (x in DS) {
+    document.write(DS[x] + "<br>");
+}
+</script>
+
+</body>
+</html>
